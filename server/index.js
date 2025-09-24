@@ -293,8 +293,8 @@ app.use((err, req, res, next) => {
 });
 
 
-// --- Start Server ---
-const PORT = 3001;
+
+const PORT = process.env.PORT || 3001; // Railway پورت خودش رو به process.env.PORT میده
 app.listen(PORT, () => {
-    // Server start log removed for production
+  console.log(`Server running on port ${PORT}`);
 });
