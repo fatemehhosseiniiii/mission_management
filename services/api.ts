@@ -1,7 +1,7 @@
 import { Mission, User, NewUserData, ChecklistItem } from '../types';
 
 const CURRENT_USER_KEY = 'currentUser';
-const API_BASE_URL = 'http://localhost:3001/api'; // Use absolute path for direct API calls
+const API_BASE_URL = 'https://missionmanagement-production.up.railway.app/api'; // Use absolute path for direct API calls
 
 // Helper to handle API responses
 const handleApiResponse = async (response: Response) => {
