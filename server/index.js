@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 // --- Supabase Client ---
-const supabaseUrl = 'https://xqypcmddvgzossnybhzq.supabase.co';
-const supabaseKey ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhxeXBjbWRkdmd6b3NzbnliaHpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgzNTM4ODgsImV4cCI6MjA3MzkyOTg4OH0.c0HxU3yvf50Z9eFhO7uJkY6mBtOEKvDYQ6HfRfufAGw';
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
     process.exit(1);
